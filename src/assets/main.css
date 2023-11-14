@@ -1,6 +1,7 @@
 @import './fonts.css';
 @import './base.css';
 @import './scss/card.scss';
+@import './scss/vue-transitions.scss';
 
 #app {
   margin: 0 auto;
@@ -30,6 +31,11 @@ p {
   color: var(--color-text, #242742);
   font-feature-settings: 'clig' off, 'liga' off;
   margin-bottom: 1.5rem;
+}
+
+b {
+  font: inherit;
+  font-weight: bold;
 }
 
 ul {

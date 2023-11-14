@@ -3,10 +3,16 @@ import { defineStore } from "pinia";
 export const useFormStore = defineStore("form", {
   state: () => {
     return {
-      form1: {
-        email: "",
-      },
+      email: "",
+      sub: false,
     };
   },
-  actions: {},
+  actions: {
+    submitForm() {
+      this.sub = true;
+    },
+    resetForm() {
+      this.sub = false;
+    },
+  },
 });
