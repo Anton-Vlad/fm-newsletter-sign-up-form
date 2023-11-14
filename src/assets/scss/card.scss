@@ -1,39 +1,50 @@
 .card {
-    width: 58rem;
-    height: 40rem;
+    width: 100%;
+    height: initial;
+    min-height: 100vh;
     background-color: var(--white);
-    border-radius: 2.25rem;
-    box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
+
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
-    gap: 1.5rem;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding: 0;
 
     &.card--success {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
         width: 31.5rem;
         height: initial;
-        padding: 3rem 4rem 4rem;
+        padding: 0 1.5rem 2.5rem;
 
         img {
+            margin-top: 9.31rem;
             margin-bottom: 2.5rem;
+        }
+
+        .btn-submit {
+            margin-top: auto;
+            margin-bottom: 0;
         }
     }
 
     .card__left {
-        padding: 2.5rem;
+        flex: 1 auto;
+        padding: 2.5rem 1.5rem;
     }
 
     .card__right {
-        min-width: 25rem;
-        max-width: 25rem;
-        height: 100%;
-        background-image: url('@/assets/images/illustration-sign-up-desktop.svg');
+        min-width: 100%;
+        max-width: 100%;
+        height: 17.75rem;
+        background-image: url('@/assets/images/illustration-sign-up-mobile.svg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         border-radius: 1rem;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
         overflow: hidden;
     }
 
@@ -67,6 +78,52 @@
             border: 1px solid var(--vermellion, #FF6155);
             background: rgba(255, 97, 85, 0.15);
             color: var(--vermellion, #FF6155);
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        width: 58rem;
+        height: 40rem;
+        min-height: initial;
+        border-radius: 2.25rem;
+        box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem;
+        gap: 1.5rem;
+
+        &.card--success {
+            display: block;
+            width: 31.5rem;
+            height: initial;
+            padding: 3rem 4rem 4rem;
+    
+            img {
+                margin-top: 0;
+                margin-bottom: 2.5rem;
+            }
+
+            .btn-submit {
+                margin: 0
+            }
+        }
+
+        .card__left {
+            flex: initial;
+            padding: 2.5rem;
+        }
+
+        .card__right {
+            min-width: 25rem;
+            max-width: 25rem;
+            height: 100%;
+            background-image: url('@/assets/images/illustration-sign-up-desktop.svg');
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
         }
     }
 }

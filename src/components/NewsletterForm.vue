@@ -28,13 +28,12 @@ const displayErrors = computed(() => {
 })
 const sumitForm = function () {
     let error = displayErrors;
-    console.log('ERROR?', error.value)
     if (!error.value) {
         form1.submitForm();
 
-        console.log('Can Submit the form!', [form1.email, form1.sub])
+        // console.log('Submit the form!', [form1.email, form1.sub]);
     } else {
-        console.log("Can't!")
+        // console.log("Can't submit!");
     }
 }
 const resetForm = function () {

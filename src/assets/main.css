@@ -14,7 +14,7 @@
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: 100%; /* 3.5rem */
@@ -48,7 +48,7 @@ ul {
 li {
   list-style: none;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   gap: 1rem;
   margin-bottom: 0.7rem;
@@ -122,5 +122,10 @@ button {
 }
 
 @media (min-width: 1024px) {
-
+  h1 {
+    font-size: 3.5rem;
+  }
+  li {
+    align-items: center;
+  }
 }
