@@ -1,0 +1,120 @@
+@import './fonts.css';
+@import './base.css';
+@import './scss/card.scss';
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 3.5rem */
+  color: var(--color-heading, #242742);
+  font-feature-settings: 'clig' off, 'liga' off;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.5rem */
+  color: var(--color-text, #242742);
+  font-feature-settings: 'clig' off, 'liga' off;
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2.5rem;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+
+label {
+  color: var(--color-heading, #242742);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 1.125rem */
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+input[type=text],
+input[type=email] {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-border, rgba(25, 24, 43, 0.25));
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.5rem */
+  outline: 0;
+}
+
+input[type=text]:focus,
+input[type=text]:focus-visible,
+input[type=text]:hover,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=email]:focus-visible,
+input[type=email]:hover,
+input[type=email]:focus {
+  border-color: var(--color-border-hover);
+}
+
+button {
+  color: var(--white, #FFF);
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 1.5rem */
+  border-radius: 0.5rem;
+  background: var(--dark-Navy, #242742);
+  outline: 0;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.2s background-color ease-in-out, 0.2s background-image ease-in-out, 0.2s color ease-in-out, 0.2s box-shadow ease-in-out;
+}
+
+.error-text {
+  color: var(--vermellion, #FF6155);
+  text-align: right;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 1.125rem */
+}
+
+@media (min-width: 1024px) {
+
+}

@@ -1,0 +1,73 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --dark-navy: hsla(234, 29%, 20%, 1);
+  --pale-navy: hsla(234, 17%, 26%, 1);
+  --vermellion: hsla(4, 100%, 67%, 1);
+  --grey: rgba(25, 24, 43, 0.25);
+  --white: hsla(0, 0%, 100%, 1);
+  --Gradient-1: linear-gradient(204deg, #FF6A3A 0%, #FF527B 100%);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--dark-navy);
+
+  --color-border: var(--grey);
+  --color-border-hover: var(--dark-navy);
+
+  --color-heading: var(--dark-navy);
+  --color-text: var(--dark-navy);
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  /* transition:
+    color 0.5s,
+    background-color 0.5s; */
+  line-height: 1.5rem;
+  font-family:
+    Roboto,
+    sans-serif;
+  font-size: 1rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.attribution {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--white);
+  opacity: 0.6;
+}
+.attribution a {
+  color: var(--white);
+}
+.attribution a:hover {
+  color: var(--vermellion);
+}
+
+@media (min-width: 1024px) {
+  .attribution {
+    display: block;
+  }
+}
